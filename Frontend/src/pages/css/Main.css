@@ -1,0 +1,115 @@
+.home-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  /* background-color: black; */
+}
+.worksheet-form {
+  width: 50%;
+  height: 98vh;
+  padding-bottom: 0px !important;
+}
+.preview-container {
+  width: 50%;
+}
+/* ///////////////// Form css //////////////////////////////// */
+.worksheet-form {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.worksheet-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+  padding: 15px;
+  /* background-color: white; */
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}
+
+.question input[type="text"],
+.question ul li input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:disabled {
+  /* background-color: #ccc; */
+  cursor: not-allowed;
+}
+
+.feedback-message {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ff6b6b;
+}
+
+/* ////////////////// */
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ///////////////// */
+.worksheetSection h1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+.worksheet-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+.Boxdiv {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(73, 73, 73, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Boxdiv:hover {
+  background-color: rgb(73, 73, 73, 0.8);
+}

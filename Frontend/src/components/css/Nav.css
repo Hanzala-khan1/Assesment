@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 10px 0px #000;
+  background-color: rgb(21, 25, 34);
+}
+
+.navbar-logo img {
+  height: 100px;
+}
+
+.navbar-menu ul {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu ul li {
+  margin-bottom: 10px;
+}
+
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-menu ul li a:hover {
+  border-bottom: 4px solid white;
+}
+.navbar-menu ul li.active a {
+  border-bottom: 4px solid white;
+}
+.navbar-menu ul li.dd-menu.active > a {
+  border-bottom: 4px solid white !important;
+}
+
+.navbar-menu-button {
+  cursor: pointer;
+}
+
+.navbar-menu-button svg {
+  font-size: 24px;
+  color: #333;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.iconsfont {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  opacity: 0.2;
+  color: white;
+}
+
+.iconsfont:hover {
+  opacity: 1;
+  color: white;
+}
+
+.open {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  top: 4.1rem;
+  background-color: rgb(21, 25, 34);
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  animation: slideIn 0.8s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.navbar-menu ul li:hover > ul {
+  display: block;
+}
+
+/* Rest of the CSS code remains the same as before */
+
+.dd-menu {
+  position: relative;
+}
+
+@media (min-width: 780px) {
+  .navbar-menu-button {
+    display: none;
+  }
+  .navbar-menu {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+  }
+
+  .navbar-menu ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-menu ul li {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
